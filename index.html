@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周欣欣 - Welcome to My World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 星空背景 -->
+    <div class="stars"></div>
+
+    <!-- 首页 -->
+    <div id="home" class="page home-page active">
+        <div class="home-content">
+            <div class="avatar-container">
+                <div class="avatar" id="home-avatar">
+                    周
+                </div>
+            </div>
+            <h1 class="welcome-text">WELCOME TO MY WORLD</h1>
+            <button class="enter-btn" onclick="showProfile()">进入我的世界</button>
+        </div>
+    </div>
+
+    <!-- 个人主页 -->
+    <div id="profile" class="page profile-page">
+        <button class="back-btn" onclick="showHome()">← 返回首页</button>
+        
+        <div class="profile-header">
+            <div class="profile-avatar" id="profile-avatar">周</div>
+            <h1 class="profile-title">周欣欣的世界</h1>
+        </div>
+
+        <div class="profile-brief">
+            <div class="brief-item">
+                <span class="brief-label">姓名</span>
+                <span class="brief-value">周欣欣</span>
+            </div>
+            <div class="brief-item">
+                <span class="brief-label">年龄</span>
+                <span class="brief-value">21岁</span>
+            </div>
+            <div class="brief-item">
+                <span class="brief-label">联系方式</span>
+                <span class="brief-value">17877651693</span>
+            </div>
+            <div class="brief-item">
+                <span class="brief-label">邮箱</span>
+                <span class="brief-value">3102837533@qq.com</span>
+            </div>
+            <div class="brief-item">
+                <span class="brief-label">简介</span>
+                <span class="brief-value">今天的我有点热爱生活</span>
+            </div>
+        </div>
+
+        <div class="posts-section">
+            <h2 class="section-title">个人主页</h2>
+            
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-avatar" data-avatar="true">周</div>
+                    <div class="post-info">
+                        <h3>周欣欣</h3>
+                        <div class="post-time">2小时前</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    小马宝莉出的新盲盒，抽到了概率不到百分之2的宇宙公主隐藏款。早知道这样，就把好运气留到更有用的地方了。
+                </div>
+                <div class="post-image" data-image="photo1.jpg">
+                    <div class="post-image-placeholder">📷 摄影作品展示</div>
+                </div>
+                <div class="post-tags">
+                    <span class="tag">#盲盒</span>
+                    <span class="tag">#生活记录</span>
+                    <span class="tag">#小马宝莉</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-avatar" data-avatar="true">周</div>
+                    <div class="post-info">
+                        <h3>周欣欣</h3>
+                        <div class="post-time">1天前</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    为了拍摄产品找的小演员，不到四岁但是有非常棒的表现力呢，镜头里的她十分可爱。
+                </div>
+                <div class="post-image" data-image="book1.jpg">
+                    <div class="post-image-placeholder">📚 读书时光</div>
+                </div>
+                <div class="post-tags">
+                    <span class="tag">#摄影</span>
+                    <span class="tag">#萌娃</span>
+                    <span class="tag">#惊喜</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-avatar" data-avatar="true">周</div>
+                    <div class="post-info">
+                        <h3>周欣欣</h3>
+                        <div class="post-time">3天前</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    康宝是我的小猫，只要把被子撑开它就会主动钻进来和我一起睡觉。
+                </div>
+                <div class="post-image" data-image="music1.jpg">
+                    <div class="post-image-placeholder">🎹 音乐时光</div>
+                </div>
+                <div class="post-tags">
+                    <span class="tag">#小猫</span>
+                    <span class="tag">#可爱</span>
+                    <span class="tag">#幸福</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-avatar" data-avatar="true">周</div>
+                    <div class="post-info">
+                        <h3>周欣欣</h3>
+                        <div class="post-time">1周前</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    吉利是一只很可爱的边牧，当他碰到了好朋狗，就再也拉不走了。
+                </div>
+                <div class="post-image" data-image="travel1.jpg">
+                    <div class="post-image-placeholder">🌍 旅行足迹</div>
+                </div>
+                <div class="post-tags">
+                    <span class="tag">#小狗</span>
+                    <span class="tag">#探索</span>
+                    <span class="tag">#好朋狗的友谊</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
